@@ -15,9 +15,11 @@ File or Folder | Purpose
 
 ## Next Steps
 
-- Open a new terminal and run `cds watch` 
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+- Open a new terminal and run `npm install` 
+- cds build/all
+- cds deploy --to hana
+- mbt build
+- cf deploy mta_archives/HC_OFF_SUPPLIES_1.0.0.mtar 
 
 
 ## Learn More
