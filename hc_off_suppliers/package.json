@@ -1,10 +1,10 @@
 {
-  "name": "HC_OFF_SUPPLIES",
+  "name": "hc_off_suppliers",
   "version": "1.0.0",
   "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
+  "repository": "https://github.com/ancutamezi/learning-journey-tutorials.git",
   "license": "UNLICENSED",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@sap/cds": "^4",
     "@sap/hana-client": "^2.6.61",
@@ -12,8 +12,7 @@
   },
   "devDependencies": {
     "@sap/hdi-deploy": "^4.3.3",
-    "@sap/ux-specification": "^1.100.2",
-    "sqlite3": "^5.0.8"
+    "@sap/ux-specification": "^1.100.2"
   },
   "scripts": {
     "start": "cds run"
