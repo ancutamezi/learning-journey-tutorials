@@ -19,7 +19,7 @@ File or Folder | Purpose
 - cds build/all
 - cds deploy --to hana
 - mbt build
-- cf deploy mta_archives/HC_OFF_SUPPLIES_1.0.0.mtar 
+- cf deploy mta_archives/hc-off-supplies_1.0.0.mtar 
 
 
 ## Learn More

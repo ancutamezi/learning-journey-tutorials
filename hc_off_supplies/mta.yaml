@@ -1,9 +1,9 @@
 ## Generated mta.yaml based on template version 0.4.0
-## appName = hc_off_supplies
+## appName = hc-off-supplies
 ## language=nodejs; multiTenant=false
 ## approuter=
 _schema-version: '3.1'
-ID: hc_off_supplies
+ID: hc-off-supplies
 version: 1.0.0
 description: "A simple CAP project."
 parameters:
@@ -18,20 +18,20 @@ build-parameters:
 
 modules:
  # --------------------- SERVER MODULE ------------------------
- - name: hc_off_supplies-srv
+ - name: hc-off-supplies-srv
  # ------------------------------------------------------------
    type: nodejs
    path: gen/srv
    requires:
     # Resources extracted from CAP configuration
-    - name: hc_off_supplies-db
+    - name: hc-off-supplies-db
    provides:
     - name: srv-api      # required by consumers of CAP services (e.g. approuter)
       properties:
         srv-url: ${default-url}
 
  # -------------------- SIDECAR MODULE ------------------------
- - name: hc_off_supplies-db-deployer
+ - name: hc-off-supplies-db-deployer
  # ------------------------------------------------------------
    type: hdb
    path: gen/db  
@@ -39,14 +39,14 @@ modules:
      buildpack: nodejs_buildpack
    requires:
     # 'hana' and 'xsuaa' resources extracted from CAP configuration
-    - name: hc_off_supplies-db
+    - name: hc-off-supplies-db
 
 
 resources:
  # services extracted from CAP configuration
  # 'service-plan' can be configured via 'cds.requires.<name>.vcap.plan'
 # ------------------------------------------------------------
- - name: hc_off_supplies-db
+ - name: hc-off-supplies-db
 # ------------------------------------------------------------
    type: com.sap.xs.hdi-container
    parameters:

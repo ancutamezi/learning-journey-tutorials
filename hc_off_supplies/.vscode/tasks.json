@@ -28,7 +28,7 @@
       "problemMatcher": []
     },
     {
-      "label": "cds-deploy-HC_OFF_SUPPLIES-my.db",
+      "label": "cds-deploy-hc-off-supplies-my.db",
       "type": "shell",
       "command": "cds",
       "args": [
@@ -46,13 +46,13 @@
       ]
     },
     {
-      "label": "cds-deploy-to-hana-HC_OFF_SUPPLIES-HC_OFF_SUPPLIES-db",
+      "label": "cds-deploy-to-hana-hc-off-supplies-hc-off-supplies-db",
       "type": "shell",
       "command": "cds",
       "args": [
         "deploy",
         "--to",
-        "hana:HC_OFF_SUPPLIES-db",
+        "hana:hc-off-supplies-db",
         "--no-save"
       ],
       "options": {

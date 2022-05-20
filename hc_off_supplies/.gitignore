@@ -1,4 +1,4 @@
-# CAP HC_OFF_SUPPLIES
+# CAP hc-off-supplies
 _out
 *.db
 connection.properties
